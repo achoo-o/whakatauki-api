@@ -4,6 +4,7 @@ export async function up(knex) {
     table.string('text')
     table.string('translation_en')
     table.string('explanation')
+    table.string('credit')
   })
 }
 
