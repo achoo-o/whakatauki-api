@@ -8,8 +8,9 @@ A credit link is attached to each whakataukī to show it's source and a potentia
 Whakatauākī by Tinirau of Wanganui.
 
 ## To do list
-- [ ] Research
-- [ ] Create Database
+- [x] Research
+- [x] Create Database
+- [ ] Update boilerplate hooks & front-end
 
 ------------------------------------------------------
 
