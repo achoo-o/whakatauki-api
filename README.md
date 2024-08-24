@@ -1,6 +1,11 @@
 # Whakataukī API
 
-An API created to promote Māori culture via Whakataukī (not to be confused with Whakatauākī).
+An API created to promote Māori culture via Whakataukī.
+
+A credit link is attached to each whakataukī to show it's source and a potentially different English translation/explanation. Most were taken directly, some were altered.
+
+"[Toi tu te kupu, toi tu te mana, toi tu te whenua.](https://health.nzdf.mil.nz/your-health/spirituality/te-ao-maori)";  
+Whakatauākī by Tinirau of Wanganui.
 
 ## To do list
 - [ ] Research
