@@ -1,8 +1,18 @@
-# Boilerplate: Fullstack with Sass
+# Whakataukī API
 
-## Setup
+An API created to promote Māori culture via Whakataukī (not to be confused with Whakatauākī).
 
-### What's included
+## To do list
+- [ ] Research
+- [ ] Create Database
+
+------------------------------------------------------
+
+## Boilerplate: Fullstack with Sass
+
+### Setup
+
+#### What's included
 
 This repo includes:
 
