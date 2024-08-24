@@ -1,9 +1,9 @@
 export async function seed(knex) {
   // Deletes ALL existing entries
-  await knex('tags').del()
+  await knex('whakatauki_tags').del()
 
   // Inserts seed entries
-  await knex('tags').insert([
+  await knex('whakatauki_tags').insert([
     { whakatauki_id: 1, tag_id: 8, },
     { whakatauki_id: 1, tag_id: 10, },
     { whakatauki_id: 2, tag_id: 11, },
