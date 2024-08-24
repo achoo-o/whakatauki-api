@@ -7,7 +7,7 @@ export async function seed(knex) {
     { text: 'Ka mate kāinga tahi ka ora kāinga rua.', translation_en: 'When one home dies another home lives.', explanation: 'Having multiple places to call home means when one fails, you\'ll have another to go to.', 
       credit: 'https://www.aa.co.nz/membership/aa-directions/features/come-on-in-a-look-inside-the-new-zealand-home/the-meaning-of-home/' },
 
-    { text: 'E mua kaikai, e muri kai huare.', translation_en: 'Early arrivals have the pick, but late comers may only get spittal.', explanation: null, 
+    { text: 'E mua kaikai, e muri kai huare.', translation_en: 'Early arrivals have the pick, but late comers may only get spittle.', explanation: null, 
       credit: 'https://www.maorilanguage.net/maori-words-phrases/proverbs-nga-whakatauki-nga-whakatauaki/' },
 
     { text: 'Toitū he kāinga, whatu ngarongaro he tangata.', translation_en: 'While the land remains the inhabitants are gone.', explanation: null, 
