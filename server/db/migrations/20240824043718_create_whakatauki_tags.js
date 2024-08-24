@@ -1,8 +1,8 @@
 export async function up(knex) {
   return knex.schema.createTable('whakatauki_tags', (table) => {
-    table.increments('id')
-    table.number('whakatauki_id')
-    table.number('tag_id')
+    table.integer('id').primary()
+    table.integer('whakatauki_id')
+    table.integer('tag_id')
   })
 }
 

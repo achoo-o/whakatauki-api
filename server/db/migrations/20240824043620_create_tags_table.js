@@ -1,6 +1,6 @@
 export async function up(knex) {
   return knex.schema.createTable('tags', (table) => {
-    table.increments('id')
+    table.integer('id').primary()
     table.string('label')
   })
 }
