@@ -1,12 +1,13 @@
-import { useFruits } from '../hooks/useFruits.ts'
+import { useWhakatauki } from '../hooks/useWhakatauki.ts'
 
 function App() {
-  const { data } = useFruits()
+  const { data } = useWhakatauki()
 
   return (
     <>
       <div className="app">
         <h1>Fullstack Boilerplate</h1>
+        {data}
       </div>
     </>
   )
