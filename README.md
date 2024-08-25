@@ -10,7 +10,8 @@ Whakatauākī by Tinirau of Wanganui.
 ## To do list
 - [x] Research
 - [x] Create Database
-- [ ] Update boilerplate hooks & front-end
+- [x] Update boilerplate hooks & front-end
+- [ ] Enquire about db restrictions (only GET requests; no CORS restrictions)
 
 ------------------------------------------------------
 
