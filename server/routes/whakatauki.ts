@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
   try {
     const whakatauki = await db.getAllWhakatauki()
     const tags = await db.getAllTags()
-    const data = whakatauki.map((obj, i) => {
+    const data: Output[] = whakatauki.map((obj, i) => {
       return {...obj, tags: tags[i]}
     })
     const output = JSON.stringify(data)
