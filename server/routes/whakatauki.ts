@@ -12,8 +12,7 @@ router.get('/', async (req, res) => {
     const data: Output[] = whakatauki.map((obj, i) => {
       return {...obj, tags: tags[i]}
     })
-    const output = JSON.stringify(data)
-    res.json(output)
+    res.json(data)
   } catch (error) {
     console.log(error)
     res.status(500).json({ message: 'Something went wrong' })
