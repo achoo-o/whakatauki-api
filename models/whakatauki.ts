@@ -2,7 +2,7 @@ export interface Whakatauki {
   id: number
   text: string
   translationEng: string
-  explanation: string
+  explanation?: string
   credit: string        //link
 }
 

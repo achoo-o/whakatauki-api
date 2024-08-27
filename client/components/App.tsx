@@ -1,4 +1,5 @@
 import { useWhakatauki } from '../hooks/useWhakatauki.ts'
+import Documentation from './Documentation.tsx'
 
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
   return (
     <>
       <div className="app">
-        <h1>Fullstack Boilerplate</h1>
-        {data.map((obj) => <p key={obj.id}>{obj.text}</p>)}
+        <h1>Whakataukī API</h1>
+        <Documentation />
+        {/* {data.map((obj) => <p key={obj.id}>{obj.text}</p>)} */}
       </div>
     </>
   )
