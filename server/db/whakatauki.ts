@@ -1,5 +1,4 @@
 import connection from './connection.ts'
-import { Tags } from '../../models/whakatauki.ts'
 
 export async function getAllWhakatauki(db = connection) {
   const whakatauki = await db('whakatauki')
