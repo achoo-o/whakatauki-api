@@ -1,11 +1,17 @@
 import { useWhakatauki } from '../hooks/useWhakatauki.ts'
+import LoadingIndicator from './LoadingIndicator.tsx'
 import Documentation from './Documentation.tsx'
 
-
 function App() {
-  const { data } = useWhakatauki()
-  //Temporary error fix | Find proper handling
-  if (!data) return null
+  const { isPending, isError, error, data } = useWhakatauki()
+  
+  if (isPending) {
+    return <LoadingIndicator />
+  }
+
+  if (isError) {
+    return <p>An error has occured: {error.message}</p>
+  }
 
   return (
     <>
