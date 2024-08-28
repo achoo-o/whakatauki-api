@@ -1,20 +1,31 @@
 import connection from './connection.ts'
-import { Output, Tags } from '../../models/whakatauki.ts'
+import { Tags } from '../../models/whakatauki.ts'
 
 export async function getAllWhakatauki(db = connection) {
-  const whakatauki = db('whakatauki').select()
+  const whakatauki = await db('whakatauki')
+
+  //Organise and select return values
+  .select('whakatauki.id as id', 'whakatauki.text as text', 'whakatauki.translation_en as translationEng', 'explanation', 'credit')
+  .leftJoin('whakatauki_tags','whakatauki_tags.whakatauki_id','whakatauki.id')
+  .leftJoin('tags','whakatauki_tags.tag_id','tags.id')
+  .groupBy('whakatauki.id')
+  .orderBy('whakatauki.id')
+
+  //Define output
+  .then((rows => {
+    const result = rows.map(async (row) => {
+      return {
+        id: row.id,
+        text: row.text,
+        translationEng: row.translationEng,
+        explanation: row.explanation,
+        credit: row.credit,
+        tags: await db('tags')
+          .join('whakatauki_tags','whakatauki_tags.tag_id','tags.id')
+          .where('whakatauki_tags.whakatauki_id', row.id)
+          .pluck('label')
+      }})
+      return Promise.all(result)
+  }))
   return whakatauki
-}
-
-export async function getAllTags(db = connection) {
-  const tags = await db('tags').join('whakatauki_tags','tags.id','whakatauki_tags.tag_id').select('label','whakatauki_id');
-  const tagsArr: string[] = []
-
-  //Create an array of arrays whose index are equal to whakatauki_id
-  tags.map((obj: Tags) => {
-    const { label, whakatauki_id } = obj
-    tagsArr[whakatauki_id-1] === undefined ? tagsArr[whakatauki_id-1] = [label] : tagsArr[whakatauki_id-1].push(label)
-  })
-
-  return tagsArr
 }

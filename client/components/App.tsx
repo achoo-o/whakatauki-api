@@ -12,7 +12,7 @@ function App() {
       <div className="app">
         <h1>Whakataukī API</h1>
         <Documentation />
-        {/* {data.map((obj) => <p key={obj.id}>{obj.text}</p>)} */}
+        {data.map((obj) => <p key={obj.id}>{obj.text}</p>)}
       </div>
     </>
   )

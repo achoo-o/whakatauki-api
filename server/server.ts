@@ -6,7 +6,6 @@ import whakataukiRoutes from './routes/whakatauki.ts'
 const server = express()
 
 server.use(express.json())
-
 server.use('/api/v1/whakatauki', whakataukiRoutes)
 
 if (process.env.NODE_ENV === 'production') {
