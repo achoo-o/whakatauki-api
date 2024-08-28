@@ -3,7 +3,7 @@ import LoadingIndicator from './LoadingIndicator.tsx'
 import Documentation from './Documentation.tsx'
 
 function App() {
-  const { isPending, isError, error, data } = useWhakatauki()
+  const { isPending, isError, error } = useWhakatauki()
   
   if (isPending) {
     return <LoadingIndicator />
