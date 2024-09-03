@@ -7,7 +7,7 @@ export default function Documentation() {
 
       <h6>Requests & Endpoint</h6>
       <p>Only GET requests are accepted.</p>
-      <p>Endpoint: LINK HERE</p>
+      <p>Endpoint: <a href="https://web-production-20510.up.railway.app/api/v1/whakatauki">https://web-production-20510.up.railway.app/api/v1/whakatauki</a></p>
 
       <h6>Data Structure</h6>
       <p>The data will return to you in the following format:</p>

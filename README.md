@@ -2,6 +2,8 @@
 
 An API created to promote Māori culture via Whakataukī.
 
+Endpoint: https://web-production-20510.up.railway.app/api/v1/whakatauki
+
 A credit link is attached to each whakataukī to show it's source and a potentially different English translation/explanation. Most were taken directly, some were altered.
 
 "[Toi tu te kupu, toi tu te mana, toi tu te whenua.](https://health.nzdf.mil.nz/your-health/spirituality/te-ao-maori)";  
@@ -11,7 +13,7 @@ Whakatauākī by Tinirau of Wanganui.
 - [x] Research
 - [x] Create Database
 - [x] Update boilerplate hooks & front-end
-- [ ] Enquire about db restrictions (only GET requests; no CORS restrictions)
+- [x] Enquire about db restrictions (only GET requests; no CORS restrictions)
 
 ------------------------------------------------------
 
