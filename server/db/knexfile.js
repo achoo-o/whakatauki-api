@@ -8,10 +8,9 @@ const __dirname = Path.dirname(__filename)
 
 if (process.env.NODE_ENV === 'production') {
   dotenv.config()
-} else {
-  dotenv.config({ path: Path.join(__dirname, '../../.env') })
 }
 
+dotenv.config({ path: Path.join(__dirname, '../../.env') })
 
 export default {
   development: {
@@ -49,10 +48,8 @@ export default {
       connectionString: process.env.DATABASE_PUBLIC_URL,
       ssl: { rejectUnauthorized: false },
     },
-    pool: {
-      afterCreate: (conn, cb) => conn.run('PRAGMA foreign_keys = ON', cb),
     migrations: {
       directory: Path.join(__dirname, 'migrations'),
     },
-  },
-}}
+  }
+}
