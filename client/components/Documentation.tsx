@@ -1,4 +1,23 @@
 export default function Documentation() {
+  const structure =
+  `
+  id: number
+  text: string
+  translationEng: string
+  explanation?: string    //may return null if no expl. provided
+  credit: string
+  tags: string[]          //minimum 1 string in array
+  `
+  const example =
+  `
+  id: 38
+  text: "Ko taku reo taku ohooho, ko taku reo taku mapihi mauria."
+  translationEng: "My language is my awakening, my language is the window to my soul."
+  explanation: "This is a proverb closely associated with language revitalisation, a struggle which is very important in maintaining culture."
+  credit: "https://www.maori.cl/Proverbs.htm"
+  tags: [ "Uplifting", "Strength", "Guidance/Warning" ]
+  `
+
   return (
     <section className="">
       <h2 className="text-2xl text-gray-800">Documentation</h2>
@@ -12,24 +31,16 @@ export default function Documentation() {
       <h6>Data Structure</h6>
       <p>The data will return to you in the following format:</p>
       <p>Structure</p>
-      <code>
-        id: number
-        text: string
-        translationEng: string
-        explanation?: string    //may return null if no expl. provided
-        credit: string
-        tags: string[]          //minimum 1 string in array
-      </code>
+      <div className="max-w-2xl">
+        <pre className="text-base border-2">
+          {structure}
+        </pre>
+      </div>
 
       <p>Example</p>
-      <code>
-        id: 38
-        text: &quot;Ko taku reo taku ohooho, ko taku reo taku mapihi mauria.&quot;
-        translationEng: &quot;My language is my awakening, my language is the window to my soul.&quot;
-        explanation: &quot;This is a proverb closely associated with language revitalisation, a struggle which is very important in maintaining culture.&quot;
-        credit: &quot;https://www.maori.cl/Proverbs.htm&quot;
-        tags: [ &quot;Uplifting&quot;, &quot;Strength&quot;, &quot;Guidance/Warning&quot; ]
-      </code>
+      <pre>
+      {example}
+      </pre>
 
       <h6>Tags</h6>
       <p>As seen in the example above, there are tags associated with each whakataukī. Each will have a minimum of one tag. 
