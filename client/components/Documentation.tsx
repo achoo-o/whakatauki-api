@@ -1,7 +1,7 @@
 export default function Documentation() {
   return (
     <section>
-      <h2>Documentation</h2>
+      <h2 className="text-pink-600 rounded-l-2xl">Documentation</h2>
       <p>This API was created to build provide more Māori-promoting resources. The whakataukī are picked with the goal of education in mind.</p>
       <p>This is an open-source code available on <a href="https://github.com/achoo-o/whakatauki-api">Github</a>.</p>
 
