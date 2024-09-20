@@ -19,30 +19,30 @@ export default function Documentation() {
   `
 
   return (
-    <section className="">
-      <h2 className="text-2xl text-gray-800">Documentation</h2>
+    <section className="ml-1">
+      <h2 className="text-2xl text-blue-800">Documentation</h2>
+      <div className="my-5 h-0.5 w-full bg-gray-300"></div>
       <p>This API was created to build provide more Māori-promoting resources. The whakataukī are picked with the goal of education in mind.</p>
       <p>This is an open-source code available on <a href="https://github.com/achoo-o/whakatauki-api">Github</a>.</p>
 
-      <h6>Requests & Endpoint</h6>
+      <h3 className="mt-5 mb-2 text-xl text-blue-800 text-opacity-90">Requests & Endpoint</h3>
       <p>Only GET requests are accepted.</p>
-      <p>Endpoint: <a href="https://web-production-20510.up.railway.app/api/v1/whakatauki">https://web-production-20510.up.railway.app/api/v1/whakatauki</a></p>
+      <p className="font-semibold">Endpoint: <a 
+      className="text-blue-800"
+      href="https://web-production-20510.up.railway.app/api/v1/whakatauki">https://web-production-20510.up.railway.app/api/v1/whakatauki</a></p>
 
-      <h6>Data Structure</h6>
-      <p>The data will return to you in the following format:</p>
-      <p>Structure</p>
-      <div className="max-w-2xl">
-        <pre className="text-base border-2">
-          {structure}
-        </pre>
-      </div>
-
-      <p>Example</p>
-      <pre>
+      <h3 className="mt-5 mb-2 text-xl text-blue-800 text-opacity-90">Data Structure</h3>
+      <p>The data will return to you as an array of objects in the following format:</p>
+      <h4 className="font-semibold mt-5 mb-2 text-gray-900">Structure</h4>
+      <pre className="text-white max-w-2xl text-base border-2 bg-black bg-opacity-90">
+        {structure}
+      </pre>
+      <h4 className="font-semibold mt-5 mb-2 text-gray-900">Object Example</h4>
+      <pre className="text-white text-base border-2 bg-black bg-opacity-90">
       {example}
       </pre>
 
-      <h6>Tags</h6>
+      <h3 className="mt-5 mb-2 text-xl text-blue-800 text-opacity-90">Tags</h3>
       <p>As seen in the example above, there are tags associated with each whakataukī. Each will have a minimum of one tag. 
         This was made so practising developers can sort by specific tags, or create search functions based off of these tags.
       </p>
@@ -62,7 +62,7 @@ export default function Documentation() {
         <li>Motivation</li>
       </ul>
 
-      <h6>CORS Restrictions</h6>
+      <h3 className="mt-5 mb-2 text-xl text-blue-800 text-opacity-90">CORS Restrictions</h3>
       <p>None.</p>
     </section>
   )

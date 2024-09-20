@@ -14,8 +14,8 @@ function App() {
   }
 
   return (
-    <div className="font-montserrat">
-      <h1 className="text-4xl text-gray-950">Whakataukī API</h1>
+    <div className="font-montserrat m-20 leading-8">
+      <h1 className="text-4xl text-gray-950 mb-1">Whakataukī API</h1>
       <Documentation />
     </div>
   )
