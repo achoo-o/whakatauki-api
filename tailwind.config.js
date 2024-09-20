@@ -84,9 +84,8 @@ export default {
         '4xl': '2rem',
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  plugins: [require('@tailwindcss/forms')],
 }

@@ -14,12 +14,10 @@ function App() {
   }
 
   return (
-    <>
-      <div className="app">
-        <h1>Whakataukī API</h1>
-        <Documentation />
-      </div>
-    </>
+    <div className="font-montserrat">
+      <h1 className="text-4xl text-gray-950">Whakataukī API</h1>
+      <Documentation />
+    </div>
   )
 }
 
