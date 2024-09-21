@@ -51,18 +51,18 @@ export default function Documentation() {
         </p>
 
         <p>Here is a list of the current tags:</p>
-        <ul className="pl-6">
-          <li className="bg-gray-100">Nature</li>
-          <li>Modesty</li>
-          <li>Strength</li>
-          <li>Leadership</li>
-          <li>Birds</li>
-          <li>Uplifting</li>
-          <li>Teamwork</li>
-          <li>Aroha (UNUSED)</li>
-          <li>Guidance/Warning</li>
-          <li>Whanau</li>
-          <li>Motivation</li>
+        <ul className="flex flex-wrap max-w-4xl gap-5 align-top my-10 pl-6 font-medium">
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Nature</li>
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Modesty</li>
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Strength</li>
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Leadership</li>
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Birds</li>
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Uplifting</li>
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Teamwork</li>
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Aroha (UNUSED)</li>
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Guidance/Warning</li>
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Whanau</li>
+          <li className="p-2 border-2 border-white rounded-lg bg-gray-200">Motivation</li>
         </ul>
 
         <h3 id="cors" className="mt-5 mb-2 text-xl text-blue-800 text-opacity-90">CORS Restrictions</h3>
