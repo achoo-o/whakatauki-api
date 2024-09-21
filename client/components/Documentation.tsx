@@ -29,7 +29,7 @@ export default function Documentation() {
       <p>Only GET requests are accepted.</p>
       <p className="font-semibold">Endpoint: <a 
       className="text-blue-800"
-      href="https://web-production-20510.up.railway.app/api/v1/whakatauki">https://web-production-20510.up.railway.app/api/v1/whakatauki</a></p>
+      href="https://whakatauki-api.up.railway.app/api/v1/whakatauki">https://whakatauki-api.up.railway.app/api/v1/whakatauki</a></p>
 
       <h3 className="mt-5 mb-2 text-xl text-blue-800 text-opacity-90">Data Structure</h3>
       <p>The data will return to you as an array of objects in the following format:</p>
